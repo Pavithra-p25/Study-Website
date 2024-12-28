@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<style>
+    .logo{
+        margin-top:10px;
+        margin-left:680px;
+        width:150px;
+        height:23px;
+    
+    }
+    h2{
+        margin-top:20px;
+        text-align: center;
+        font-size: 32px;
+        margin-bottom:32px;
+        font-weight: 300;
+        font-family: 'Reckless-Light', 'Palatino', Garamond, Georgia, serif;
+    }
+    p{
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            font-size:16px;
+            font-family:'Reckless-Light', 'Palatino', Garamond, Georgia, serif; 
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border-color: rgb(190, 190, 190);
+            border-radius:7px;
+            box-sizing: border-box;
+        }
+a{
+    color:black;
+}
+        .error-message {
+            color: red;
+            font-size: 0.9em;
+            margin-top: 5px;
+            display:none; /* Initially hidden */
+        }
+
+        .form-group.checkbox {
+            display:block;
+            align-items: left;
+        }
+
+        .form-group.checkbox label {
+            align-items: left;
+            margin-left: 10px;
+        }
+
+        button {
+            margin-top:30px;
+            padding: 10px 10px;
+            background-color:black;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left:120px;
+            border-radius:5px;
+            width: 40%;
+        }
+
+        button:disabled {
+            background-color: gray;
+        }
+        .checkbox a{
+            text-underline-offset: 2px;
+        }
+        .checkbox a:hover{
+            text-decoration-color: aquamarine;
+            text-underline-offset: 5px;
+        }
+        .log{
+            margin-top:30px;
+            
+            text-align: center;
+            font-family: 'Reckless-Light', 'Palatino', Garamond, Georgia, serif;
+            font-size:18px;
+        }
+        .log a{
+            text-underline-offset: 2px;
+        }
+</style>
+    </head>
+    <body>
+        <form>
+<img src="teachh.png" class="logo">
+<div style="height: 2px; margin-top:10px; background-color: black; width: 100%;"></div>
+<h2 >Get started with Teachable</h2>
+<p>
+    Join more than 100,000 creators who have earned over<strong> $2.5 billion</strong>
+     since 2014
+</p>
+<div class="form-container">
+    <div class="form-group label-top">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname">
+        <div class="error-message" id="nameError">Full name is required.</div>
+        
+    </div>
+    <div class="form-group label-top">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" >
+        <div class="error-message" id="emailError">Please enter a valid email address.</div>
+        
+            </div>
+
+    
+    <div class="form-group label-left">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+        <div class="error-message" id="passwordError">Password must be at least 6 characters long.</div>
+    </div>
+    <div class="form-group label-left">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" >
+        <div class="error-message" id="confirmPasswordError">Passwords do not match.</div>
+    </div>
+    <div class="checkbox" style="display:block; align-items:center; gap: 10px; margin-top:20px; margin-left:190px;">
+        <input type="checkbox" id="terms" name="terms" style="margin-left:-190px;"required>
+        <label for="terms" style="margin:0;">I agree to the <a href="#" target="_blank">Terms of Use</a> and <a href="#" target="_blank">Privacy Policy</a>.</label>
+        <div class="error-message" id="termsError">You must agree to the terms.</div>
+    </div>
+
+    <button type="submit">Create Account</button>
+    <p class="log">Already have an account ? <a href=#>Log In</a></p>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Real-time validation on input
+            document.getElementById("fullname").addEventListener("input", function () {
+                const fullname = this.value.trim();
+                const nameError = document.getElementById("nameError");
+                if (fullname === "") {
+                    nameError.style.display = "block";
+                } else {
+                    nameError.style.display = "none";
+                }
+            });
+    
+            document.getElementById("email").addEventListener("input", function () {
+                const email = this.value.trim();
+                const emailError = document.getElementById("emailError");
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === "" || !emailPattern.test(email)) {
+                    emailError.style.display = "block";
+                } else {
+                    emailError.style.display = "none";
+                }
+            });
+    
+            document.getElementById("password").addEventListener("input", function () {
+                const password = this.value;
+                const passwordError = document.getElementById("passwordError");
+                if (password.length < 6) {
+                    passwordError.style.display = "block";
+                } else {
+                    passwordError.style.display = "none";
+                }
+            });
+    
+            document.getElementById("confirm-password").addEventListener("input", function () {
+                const confirmPassword = this.value;
+                const password = document.getElementById("password").value;
+                const confirmPasswordError = document.getElementById("confirmPasswordError");
+                if (confirmPassword !== password) {
+                    confirmPasswordError.style.display = "block";
+                } else {
+                    confirmPasswordError.style.display = "none";
+                }
+            });
+    
+            document.getElementById("terms").addEventListener("change", function () {
+                const termsError = document.getElementById("termsError");
+                if (!this.checked) {
+                    termsError.style.display = "block";
+                } else {
+                    termsError.style.display = "none";
+                }
+            });
+    
+            // Final form validation on submit
+            document.getElementById("registrationForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+                let isValid = true;
+    
+                // Trigger validation for all fields
+                const fullname = document.getElementById("fullname").value.trim();
+                if (fullname === "") {
+                    document.getElementById("nameError").style.display = "block";
+                    isValid = false;
+                }
+    
+                const email = document.getElementById("email").value.trim();
+                const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (email === "" || !emailPattern.test(email)) {
+                    document.getElementById("emailError").style.display = "block";
+                    isValid = false;
+                }
+    
+                const password = document.getElementById("password").value;
+                if (password.length < 6) {
+                    document.getElementById("passwordError").style.display = "block";
+                    isValid = false;
+                }
+    
+                const confirmPassword = document.getElementById("confirm-password").value;
+                if (confirmPassword !== password) {
+                    document.getElementById("confirmPasswordError").style.display = "block";
+                    isValid = false;
+                }
+    
+                const terms = document.getElementById("terms").checked;
+                if (!terms) {
+                    document.getElementById("termsError").style.display = "block";
+                    isValid = false;
+                }
+    
+                
+            });
+        });
+    </script>
+    
+</form>
+
+   
+   
+    </body>
+</html>

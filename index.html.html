@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="C:\UI\css\project2.css">
+</head>
+
+<body>
+    <form>
+
+        <div class="nav">
+            <a><img src="th.jpg" class="logo" alt="Logo"></a>
+            <a href="#">creators</a>
+            <a><input type="text" value="t: for Business"
+                    placeholder="Designed for high-growth business and large teams" class="t"></a>
+        </div>
+
+        <div class="nav2">
+            <ul role="list" class="ulist">
+                <li><img src="teachh.png" class="logo2"></li>
+
+                <li class="nav-link">Product<img id="toggle-img"
+                        src="data:imagsrce/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg=="
+                        onclick="toggleProContainer();" /></li>
+
+                <div id="pro-container" class="procontainer" style="display:none;">
+                    <div class="pro">
+                        <h5>WHAT YOU CAN SELL</h5>
+                        <a class="proa" href="#">Online Courses</a><br>
+                        <a class="proa" href="#">Coaching</a><br>
+                        <a class="proa" href="#">Digital downloads</a><br>
+                        <a class="proa" href="#">Memberships</a><br>
+                        <a class="proa" href="#">Community</a><br>
+                        <a class="proa" href="#">
+                            <h6>Product overview</h6>
+                        </a>
+                    </div>
+                    <div class="pro">
+                        <div class="proo">
+                            <div clss="pro1">
+                                <h5>FEATURE HIGHLIGHTS</h5>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\speaker2.jpg">Sales &
+                                    Marketing</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\pay.jpg">
+                                    Payments</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\analy.jpg"> Analytics &
+                                    reporting</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\message.jpg"> Support
+                                    services</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\site.jpg">Site
+                                    builder</a>
+                            </div>
+                            <div class="pro2">
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\mobile.jpg">Mobile
+                                    app</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\ai.jpg">AI
+                                    features</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\app.jpg">App hub</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\stu.jpg">Student
+                                    experience</a><br>
+                                <a class="proa" href="#"><img class="speaker" src="C:\UI\images\advance.jpg">Advanced
+                                    features</a><br>
+                            </div>
+                        </div>
+                        <a class="proa" href="#">
+                            <h6>All product features</h6>
+                        </a>
+                    </div>
+                </div>
+                <script>
+                    function toggleProContainer() {
+        const proContainer = document.getElementById('pro-container');
+        const toggleImg = document.getElementById('toggle-img');
+
+        if (proContainer.style.display === 'none') {
+            // Show the content
+            proContainer.style.display = 'block';
+            // Change to second image
+            toggleImg.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANNJREFUSEvt0zEOQUEQxvH/cwAHcAAHUCokWnp6enpqenp6elqJQukADuAADiDyktlG3u7O7svzCrvtzs4v+2Umo6aT1eSS4J8ln6JOUbsS2MnlNCam2OFaAQsB18AyFI+BZ8DmC5oD2xA8FB4BBwswBo5aPATuARegYWn+BvrAVYNr4bagLU/Tp+APH66Bm4J2fM3k/i74y1WvgU/AQImasjMwLAPnuzoJRE35HrDuuOvH+a52I1Hz7GbbcU3UJe3i5wmuJNaipinqFHVlCfzfcH0A5jwWH8N5OHoAAAAASUVORK5CYII=";
+        } else {
+            // Hide the content
+            proContainer.style.display = 'none';
+            // Revert to the original image
+            toggleImg.src = "data:imagsrce/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg==";
+        }
+    }
+                </script>
+
+                <li class="nav-link">Solutions<img id="toggle-img1"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg=="
+                        onclick="toggleProContainer1();" /></li>
+                        <div id="pro-container1" class="procontainer1" style="display:none";>
+                            <div class="sol1">
+                                <h5>BY BUSINESS STAGE</h5>
+                                <a class="proa" href="#">I'm starting my business</a><br>
+                                <a class="proa" href="#">I'm growing my business</a><br>
+                                <a class="proa" href="#">I'm expanding my business</a><br>
+                                <a class="proa" href="#">Enterprise LMS</a><br>
+                                <a class="proa" href="#">Community</a><br>
+                               </div>
+                               <div class="sol1">
+                                <div class="soll">
+                                    
+                               <div class="sol2">
+
+                                <h5>BY INDUSTRY</h5>
+                                <a class="proa" href="#"><img src="C:\UI\images\market.jpg" class="speaker1">Marketing & buniess</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\health.jpg" class="speaker1">Health and fitness</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\personal.jpg" class="speaker1">Personal development</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\life.jpg" class="speaker1">Lifestyle</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\academi.jpg" class="speaker1">Academics & Languages</a><br>
+                                <div class="sol3">
+                                <a class="proa" href="#"><img src="C:\UI\images\finance.jpg" class="speaker1">Finance & investing</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\arts.jpg" class="speaker1">Arts & crafting</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\soft.jpg" class="speaker1">Software & technology</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\sprit.jpg" class="speaker1">Spirituality & worship</a><br>
+                                <a class="proa" href="#"><img src="C:\UI\images\fash.jpg" class="speaker1">Fashion & beauty</a><br>
+                                </div>
+                                </div>
+                                </div>
+
+                        </div>
+                        </div>
+                        <script>
+                            function toggleProContainer1() {
+                const proContainer1 = document.getElementById('pro-container1');
+                const toggleImg1 = document.getElementById('toggle-img1');
+        
+                if (proContainer1.style.display === 'none') {
+                    // Show the content
+                    proContainer1.style.display = 'block';
+                    // Change to second image
+                    toggleImg1.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANNJREFUSEvt0zEOQUEQxvH/cwAHcAAHUCokWnp6enpqenp6elqJQukADuAADiDyktlG3u7O7svzCrvtzs4v+2Umo6aT1eSS4J8ln6JOUbsS2MnlNCam2OFaAQsB18AyFI+BZ8DmC5oD2xA8FB4BBwswBo5aPATuARegYWn+BvrAVYNr4bagLU/Tp+APH66Bm4J2fM3k/i74y1WvgU/AQImasjMwLAPnuzoJRE35HrDuuOvH+a52I1Hz7GbbcU3UJe3i5wmuJNaipinqFHVlCfzfcH0A5jwWH8N5OHoAAAAASUVORK5CYII=";
+                } else {
+                    // Hide the content
+                    proContainer1.style.display = 'none';
+                    // Revert to the original image
+                    toggleImg1.src = "data:imagsrce/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg==";
+                }
+            }
+                        </script>
+        
+
+                <li class="nav-link">Resources<img id="toggle-img2"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg=="
+                        onclick="toggleProContainer2();" /></li>
+                        <div id="pro-container2" class="procontainer2" style="display:none";>
+                            <div class="res">
+                                <h5>RESOURCES</h5>
+                                <a class="proa" href="#">Guide & how-tos</a><br>
+                                <a class="proa" href="#">teachable:u</a><br>
+                                <a class="proa" href="#">Blog</a><br>
+                                <a class="proa" href="#">Podcast</a><br>
+                                <a class="proa" href="#">Newsletter</a><br>
+                                <a class="proa" href="#">Events</a><br>
+                                <a class="proa" href="#">
+                                    <h6>Resource overview -></h6>
+                                </a>
+                               </div>
+                               <div class="res">
+                                <h5>SUPPORT SERVICES</h5>
+                                <a class="proa" href="#">Product demo</a><br>
+                                <a class="proa" href="#">Hire an expert</a><br>
+                                <a class="proa" href="#">Rewards program</a><br>
+                                <a class="proa" href="#">
+                                    <h6>Support services -></h6>
+                                </a>
+                                </div>
+                                <div class="res">
+                                    <h5>INSPIRATION</h5>
+                                    <a class="proa" href="#">Creator stories</a><br>
+                                    <a class="proa" href="#">Example courses</a><br>
+                                    <a class="proa" href="#">Staff picks</a><br>
+                                    </div>
+                                    <div class="res">
+                                        <h5>PRODUCT SUPPORT</h5>
+                                        <a class="proa" href="#">Help center</a><br>
+                                        </div>
+
+                        </div>
+                    
+                        <script>
+                            function toggleProContainer2() {
+                const proContainer2 = document.getElementById('pro-container2');
+                const toggleImg2 = document.getElementById('toggle-img2');
+        
+                if (proContainer2.style.display === 'none') {
+                    // Show the content
+                    proContainer2.style.display = 'block';
+                    // Change to second image
+                    toggleImg2.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAANNJREFUSEvt0zEOQUEQxvH/cwAHcAAHUCokWnp6enpqenp6elqJQukADuAADiDyktlG3u7O7svzCrvtzs4v+2Umo6aT1eSS4J8ln6JOUbsS2MnlNCam2OFaAQsB18AyFI+BZ8DmC5oD2xA8FB4BBwswBo5aPATuARegYWn+BvrAVYNr4bagLU/Tp+APH66Bm4J2fM3k/i74y1WvgU/AQImasjMwLAPnuzoJRE35HrDuuOvH+a52I1Hz7GbbcU3UJe3i5wmuJNaipinqFHVlCfzfcH0A5jwWH8N5OHoAAAAASUVORK5CYII=";
+                } else {
+                    // Hide the content
+                    proContainer2.style.display = 'none';
+                    // Revert to the original image
+                    toggleImg2.src = "data:imagsrce/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg==";
+                }
+            }
+                        </script>
+        
+
+                <li class="nav-link">Pricing<img id="toggle-img3"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAORJREFUSEvtky0OwkAQhb9eAM8F8EgMwRI8nuDxBI8neDzBo0lIkFwAzwXw/LxkSQi0nd22UMRWNZ157+u8zCTU9CQ1cYngnyUfo45Rfy2Bv1yuOdApOfIBmKV5WBOvgFFBuLTjLK0Flm4L9APh0gzyND7gBrAD2p7w46O/B1zKgqVvOXjTgJ8d9GT9pM/ET4+ug2dprg66t6Cqh4DVPwTWGcaqbXygRcDSTIDFG0Dflr7QomDpdONTB9J76q1WsVxpHrrTW96tfgsckuxHb+hylYK9iiO4sigtoxi1lVBl9dqivgM/shcfONQtXAAAAABJRU5ErkJggg=="
+                        onclick="img3();" /></li>
+                <li class="spacer"></li>
+
+                <li class="log">Creator Login</li>
+                <li><input type="button" class="sign" value=" Start for free"></li>
+            </ul>
+        </div>
+        <div class="first">
+            <p>WHAT YOU CAN SELL: ONLINE COURSES</p>
+            <h1>Your go-to for fast,<br>
+                flexible course creation</h1>
+            <p class="para">Create your own online course on the best platform for<br>
+                creators <i>and</i> students. Our intuitive course builder lets <br>
+                you add different media types and customize with ease—<br>
+                so you can scale your business confidently.</p>
+            <div class="lab">
+                <lable for="email" class="ee">Enter you email:</lable><br>
+                <input class="brixUTM input-email" id="email" name="email" autocomplete="off"
+                    placeholder="hello@example.com" type="email" value="" fdprocessedid="nummsw"
+                    data-gtm-form-interact-field-id="0">
+
+                <input type="button" class="start" value="Start for free" onclick="openform()">
+                <script>
+                    function openform() {
+                        window.location.href = 'startpage.html';
+                    }
+                </script>
+                <img src="yoga.png" class="yoga-img">
+                <h6 class="small">*By submitting your email address, you agree to<br>
+                    Teachable's <a href="#">Terms of use</a> and<a href="#"> Privacy Policy</a>.</h6>
+
+            </div>
+        </div>
+
+        <div class="second">
+            <h2>Designed for simplicity, optimized for earning</h2>
+            <p>Build a professional-looking course in minutes—no coding or design skills necessary. Customize your
+                lessons, then try our
+                <br>built-in ecommerce tools to start earning.
+            </p>
+
+            <div class="container1">
+                <div class="content con1">
+                    <span>Step 1</span>
+                    <div class="line"></div>
+                    <h3 class="headu">Create</h3>
+                    <p class="paraa">For a jumpstart, use our<strong> AI course starter</strong> which creates your
+                        curriculum, lesson content, and sales page in seconds.</p>
+                </div>
+                <div class="content con2">
+                    <span>Step 2</span>
+                    <div class="line"></div>
+                    <h3 class="headu">Upload</h3>
+                    <p class="paraa">Our simple drag-and-drop builder lets you upload videos, audio, calendar events,
+                        guides, and more. Rearrange content blocks easily as you go.</p>
+                </div>
+                <div class="content con3">
+                    <span>Step 3</span>
+                    <div class="line"></div>
+                    <h3 class="headu">Personalize </h3>
+                    <p class="paraa"> Your course is an extension of your business. Bring your personal brand into your
+                        school with our easy-to-use customizations.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="thirdd">
+            <h2>Keep it growing</h2>
+            <p>Our best-in-class course creation tools let you launch fast and grow faster. Plus, we <br>
+                help you streamline tasks—no more sweating the small stuff.</p>
+            <img src="thirdd.png" class="third-img">
+            <div class="container3">
+                <div class="conn">
+                    <h3 class="headu2">A powerful checkout</h3>
+                    <p class="paraa2">Teachable:pay, our built-in checkout, empowers you to sell with peace of mind. Get
+                        fraud protection, tax-inclusive pricing,
+                        automated tax handling, flexible payment options, and more.</p>
+                </div>
+                <div class="conn">
+                    <h3 class="headu2"> Flexibility at your fingertips</h3>
+                    <p class="paraa2">Seamlessly personalize your course to align with your style and branding. You can
+                        also incorporate various content formats to
+                        better cater to your audience’s wide variety of learning styles.</p>
+                </div>
+            </div>
+            <div class="container4">
+
+                <div class="conn2">
+                    <h3>Intuitive integrations and apps</h3>
+                    <p>Imagine all the tools you know and love in one place. Connect with third-party
+                        integrations—including MailChimp, Zapier, ConvertKit, Google Analytics,
+                        Segment, and more—to run your business <i>your way</i>.</p>
+                </div>
+                <div class="conn2">
+                    <h3>Work smarter, not harder</h3>
+                    <p>We’re always building new, innovative features to keep up with the growing needs of your
+                        business. Use our built-in AI tools to kickstart ideas,
+                        draft content, create summaries, translate course content, and more in no time.</p>
+                </div>
+                <img src="third2.png" class="third2-img">
+            </div>
+
+            <div class="container5">
+                <img src="third3.png" class="third3-img">
+                <div class="up">
+                    <div class="conn3">
+                        <h3>Growth at your pace</h3>
+                        <p>Scale and market your course with our advanced data reporting and business management
+                            features.
+                            Get support selling your course with our affiliate marketing capabilities, automated
+                            payouts, and referral programs.</p>
+                    </div>
+                    <div class="conn3">
+                        <h3>Meaningful engagement</h3>
+                        <p>Build—and sustain—impactful relationships with your audience. Activate student-focused
+                            features (such as comments, quizzes, and certificates)
+                            and create a community to drive learning outcomes.</p>
+                    </div>
+                </div>
+                <input type="button" value="Start for free" class="start-two" onclick="openform()">
+                <script>
+                    function openform() {
+                        window.location.href = 'startpage.html';
+                    }
+                </script>
+            </div>
+        </div>
+
+        <div class="fourth">
+            <h2>Course spotlight</h2>
+            <p>Find inspiration in some of these popular courses from Techable creators.</p>
+            <div class="card-container">
+                <div class="cards">
+                    <div class="card">
+                        <img src="C:\UI\images\card1project2.jpg" class="card1-img">
+                        <h3>My Sacred Spine</h3>
+                        <p>Rachel Jesien teaches online courses of the transformative power of yoga geared towards those
+                            with back pain and scoliosis</p>
+                        <a href="#" onclick="openn()">See it in action</a>
+                        <script>
+                            function openn() {
+                                window.location.href ="spine.html";
+                            }
+                        </script>
+                    </div>
+                    <div class="card">
+                        <img src="C:\UI\images\card2project2.jpg" class="card2-img">
+                        <h3>Edward Zia Marketing</h3>
+                        <p>
+                            Edward Zia is a top influencer coach who teaches entreprenuers how to grow their business
+                            using Linkedin marketing strategies
+                        </p>
+                        <a href="#" onclick="openn1()">See it in action</a>
+                        <script>
+                            function openn1() {
+                                window.location.href ="edward.html";
+                            }
+                        </script>
+                    </div>
+                    <div class="card">
+                        <img src="C:\UI\images\card3project2.jpg" class="card3-img">
+                        <h3 class="h3coffee">Coffee Break Languages</h3>
+                        <p>Mark is a high school language teacher turned language podcaster. Mark expanded his podcasts
+                            into online courses.
+                        </p>
+                        <a href="#">See it in action</a>
+                    </div>
+                </div>
+            </div>
+            <div class="green">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+                            <img src="C:\UI\images\slide1project2.jpg" class="slide1-img">
+                            <div class="para">
+                                <img src="C:\UI\images\quote.svg" class="quote">
+
+                                <p> Teachable is a super easy-to-use platform that helps me create and launch my online
+                                    courses quickly.
+                                    The user-friendly interface makes the process feel effortless, allowing me to focus
+                                    on creating valuable
+                                    content for my students. Thanks to Teachable, I've been able to share my knowledge
+                                    and connect with students
+                                    from all over the world. I highly recommend it to anyone looking to create online
+                                    courses."</p>
+                                <div class="small2line">
+                                    <h3>Ben Collins</h3>
+                                    <p> Google Sheets Training</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="C:\UI\images\slide2project2.jpg" class="slide1-img">
+                            <div class="para">
+                                <img src="C:\UI\images\quote.svg" class="quote">
+                                <p>My audience is comprised of brand new nurses who have shared with me that things
+                                    they've learned
+                                    from my courses have led to them catching major clinical changes and subsequently
+                                    saving lives.
+                                    I never would have been able to create these valuable resources so swiftly without a
+                                    platform like
+                                    Teachable."</p>
+                                <div class="small2line">
+                                    <h3>Kati Kleber</h3>
+                                    <p>FreshRN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="C:\UI\images\slide3project2.jpg" class="slide1-img">
+                            <div class="para">
+                                <img src="C:\UI\images\quote.svg" class="quote">
+                                <p>I thought that, maybe, I could create a course. But I also had no idea how to build a
+                                    course from
+                                    scratch, and I knew I didn’t have the money to invest in someone who did. After a
+                                    quick search,
+                                    I found Teachable—and all of a sudden, everything felt possible.”</p>
+                                <div class="small2line">
+                                    <h3>Jess Murnane</h3>
+                                    <p>Know Your Endo</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="showSlide(0)"></span>
+                    <span class="dot" onclick="showSlide(1)"></span>
+                    <span class="dot" onclick="showSlide(2)"></span>
+                </div>
+                <script>
+                    let currentSlide = 0; // Track current slide
+                    const slides = document.querySelectorAll('.slide');
+                    const dots = document.querySelectorAll('.dot');
+
+                    function updateSlides() {
+                        const slideWidth = slides[0].clientWidth;
+                        document.querySelector('.slides').style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+                        // Update active dot
+                        dots.forEach((dot, index) => {
+                            dot.classList.toggle('active', index === currentSlide);
+                        });
+                    }
+
+                    function showSlide(index) {
+                        currentSlide = index;
+                        updateSlides();
+                    }
+
+                    function prevSlide() {
+                        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+                        updateSlides();
+                    }
+
+                    function nextSlide() {
+                        currentSlide = (currentSlide + 1) % slides.length;
+                        updateSlides();
+                    }
+
+                    window.addEventListener('resize', updateSlides); // Adjust on window resize
+                </script>
+            </div>
+        </div>
+
+        <div class="support">
+            <h2>Support at every step</h2>
+            <p>As you scale your business with courses on Teachable, we have the resources you need to <br>succeed.</p>
+            <div class="card-container2">
+                <div class="cards2">
+                    <div class="card2">
+                        <div></div>
+                        <h3>Marketing your course</h3>
+                        <p>Get expert advice on how to market your course with a pre-sale.</p>
+                        <a href="#">Get the guide</a>
+                    </div>
+                    <div class="card2">
+                        <div></div>
+                        <h3>Pricing your course right</h3>
+                        <p>
+                            No more guessing how to price your course. Get our course pricing calculator.
+                        </p>
+                        <a href="#">Get the guide</a>
+                    </div>
+                    <div class="card2">
+                        <div></div>
+                        <h3 class="createh3">Creating your course curriculum</h3>
+                        <p>Learn six steps for creating course curriculum in this interactive guide.
+                        </p>
+                        <a href="#">Get the guide</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="acourse">
+            <h2>A course builder designed for ease and impact</h2>
+            <p>Create your course today. It’s fast, simple—and the growth potential is limitless.</p>
+            <input type="button" value="Start for free" class="start2" onclick="openform()">
+            <script>
+                function openform() {
+                    window.location.href = 'startpage.html';
+                }
+            </script>
+        </div>
+        <div class="faq">
+            <h2>FAQ</h2>
+            <div class="question-container">
+                <div class="question">
+                    <span class="question-text">Why should I sell online courses on Teachable?</span>
+                    <span class="toggle-symbol" onclick="toggleAnswer()">+</span>
+                </div>
+                <p class="answer" style="display: none;">Creating and selling online courses on Teachable gives you
+                    access to both the
+                    most powerful selling tools and the most flexible course builder. You control your content. You
+                    control how you
+                    get paid. And you control the learning environment for your audience. We help you get the most out
+                    of it by
+                    growing your impact and your income.</p>
+
+                <div class="question2">
+                    <span class="question-text">What types of online courses can I sell? </span>
+                    <span class="toggle-symbol2" onclick="toggleAnswer2()">+</span>
+                </div>
+                <p class="answer2" style="display: none;">
+                    You can create online courses about virtually anything-the sky's the limit. Your unique perspective,
+                    talents, and
+                    expertise can guide the way. Meanwhile, our course creation tools and multimedia compatability allow
+                    you
+                    to turn your
+                    wisdom into accessible online courses that appeal to all learning styles.
+                </p>
+                <div class="question3">
+                    <span class="question-text">What if I've never sold a course before? </span>
+                    <span class="toggle-symbol3" onclick="toggleAnswer3()">+</span>
+                </div>
+                <p class="answer3" style="display: none;">
+                    Don't worry-you've come to the right place. Get started on our free plan, and we'll guide you
+                    through our simple
+                    platform and best practices, so you can feel confident about growing your business with Teachable.
+                </p>
+            </div>
+        </div>
+    </form>
+    <script>
+        function toggleAnswer() {
+            const answer = document.querySelector('.answer');
+            const symbol = document.querySelector('.toggle-symbol');
+            if (answer.style.display === 'none') {
+                answer.style.display = 'block';
+                symbol.textContent = '\u00D7';
+            }
+            else {
+                answer.style.display = 'none';
+                symbol.textContent = '+';
+            }
+
+        }
+
+        function toggleAnswer2() {
+            const answer2 = document.querySelector('.answer2');
+            const symbol2 = document.querySelector('.toggle-symbol2');
+            if (answer2.style.display === 'none') {
+                answer2.style.display = 'block';
+                symbol2.textContent = '\u00D7';
+            }
+            else {
+                answer2.style.display = 'none';
+                symbol2.textContent = '+';
+            }
+
+        }
+        function toggleAnswer3() {
+            const answer3 = document.querySelector('.answer3');
+            const symbol3 = document.querySelector('.toggle-symbol3');
+            if (answer3.style.display === 'none') {
+                answer3.style.display = 'block';
+                symbol3.textContent = '\u00D7';
+            }
+            else {
+                answer3.style.display = 'none';
+                symbol3.textContent = '+';
+            }
+
+        }
+
+
+    </script>
+
+    <div class="last">
+        <img src="C:\UI\images\logoproject2.png" class="logo3">
+        <div class="paraa3">
+            <p>Join the more than 150,000 creators who use Teachable to share their knowledge. Easily create and sell
+                courses, coaching,
+                and digital downloads with our powerful yet simple no-code platform.</p>
+        </div>
+        <div class="words-img">
+            <img src="C:\UI\images\wordsproject2.png" class="word">
+        </div>
+        <div>
+            <img src="C:\UI\images\iconsproject2.png" class="icons">
+        </div>
+        <div>
+            <img src="C:\UI\images\copproject2.png" class="footer">
+        </div>
+
+    </div>
+</form>
+    </body>
+</html>
